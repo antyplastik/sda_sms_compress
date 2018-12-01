@@ -3,9 +3,8 @@ import copressor.OptimalCompressor;
 import org.junit.Before;
 import org.junit.Test;
 
-public class OptimalCompressorTest {
+public class OptimalCompressorTest implements CompressorTestInterface{
 
-    private Compressor naiveCompressor;
     private Compressor optimalCompressor;
     private String inputString = "";
 
@@ -21,8 +20,17 @@ public class OptimalCompressorTest {
     }
 
     @Test
-    public void optimalCompressorResult(){
+    public void compressionLength() {
 
     }
 
+    @Test
+    public void compressorResult() {
+
+    }
+
+    @Test
+    public void decompressorResult() {
+
+    }
 }

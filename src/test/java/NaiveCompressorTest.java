@@ -6,7 +6,7 @@ import org.junit.Assert;
 
 import static org.junit.Assert.assertEquals;
 
-public class NaiveCompressorTest {
+public class NaiveCompressorTest implements CompressorTestInterface{
 
     private Compressor naiveCompressor;
     private String inputString = "";
