@@ -1,11 +1,13 @@
-import java.math.BigDecimal;
+package copressor;
+
+import copressor.Compressor;
 
 public class OptimalCompressor implements Compressor {
 
+    private String inputString;
 
-    @Override
-    public String getInputText() {
-        return null;
+    public OptimalCompressor(String inputString) {
+        this.inputString = inputString;
     }
 
     @Override
@@ -15,11 +17,6 @@ public class OptimalCompressor implements Compressor {
 
     @Override
     public String decompress(String input) {
-        return null;
-    }
-
-    @Override
-    public BigDecimal calculateCost(int sms) {
         return null;
     }
 }
