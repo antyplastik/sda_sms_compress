@@ -25,20 +25,16 @@ public class NaiveCompressor implements Compressor {
             actual = inputString.charAt(i);
             if (i < inputStrLen - 1)
                 next = inputString.charAt(i + 1);
-
             if (i > 0)
                 previous = inputString.charAt(i-1);
 
             if (actual == ' ' || actual == '\n' || actual == '\t') {
                 actual = next;
                 i++;
-
                 if (i > 0)
                     previous = inputString.charAt(i-1);
-
                 if (i < inputStrLen - 1)
                     next = inputString.charAt(i + 1);
-
                 if (Character.isLowerCase(actual)) {
                     if ((previous != ',') || (previous != '.'))
                     actual = Character.toUpperCase(actual);

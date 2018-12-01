@@ -18,5 +18,6 @@ dependencies {
     testCompile group: 'org.mockito', name: 'mockito-core', version: '1.9.+'
     // https://mvnrepository.com/artifact/pl.pragmatists/JUnitParams
     testCompile group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.1'
+    compile 'info.picocli:picocli:3.8.0'
 
 }
